@@ -2,37 +2,96 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  width: 250px;
+  height: 22px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.navli {
+  text-decoration: none;
+  color: rgb(68, 68, 172);
+  margin-right: 35px;
+  font-size: 18px;
+  border: 1px solid rgb(156, 155, 155);
+  box-shadow: 1px 2px 5px rgb(159, 159, 159);
+  padding: 5px;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.lisUserTable {
+  border-collapse: collapse;
+}
+
+.thtd {
+  border: 1.5px solid gray;
+  padding: 10px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.formLine {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.formBtn {
+  width: 60px;
+  height: 28px;
+  margin-top: 15px;
+  margin-left: 80px;
+}
+
+.alert {
+  width: 260px;
+  height: 100px;
+  position: absolute;
+  border: 1px solid rgb(186, 185, 185);
+  top: 30%;
+  left: 42%;
+  z-index: 1000;
+}
+@media (max-width: 600px) {
+  .alert {
+    margin-left: -20px;
+    margin-top: -15px;
+    transform: scale(0.8);
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.alertBtn {
+  width: 80px;
+  height: 34px;
+  background: white;
+  border: 1px solid rgb(196, 195, 195);
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 1px rgb(219, 219, 219);
+  margin: 24px 5px 0 25px;
+  cursor: pointer;
+}
+.alertBtn:hover {
+  box-shadow: 2px 2px 3px 1px rgb(219, 219, 219);
+}
+.alertText {
+  margin: 5px 0 0 6px;
 }
